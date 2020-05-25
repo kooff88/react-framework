@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { addNameCreater, addAgeCreater, addNameAsync } from "../redux/actions";
-
 class One extends React.Component {
   constructor(props) {
     super(props);
@@ -22,7 +21,7 @@ class One extends React.Component {
             addAgeCreater(lastage + 1);
           }}
         >
-          点击
+          点击我
         </button>
       </div>
     );
