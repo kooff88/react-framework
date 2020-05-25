@@ -1,0 +1,14 @@
+body {
+  background: darkmagenta;
+  /* background: url("../images/1.jpeg") top right repeat-y; */
+}
+
+/* #root div {
+  width: 200px;
+  margin-top: 50px;
+  transform: rotate(45deg);
+} */
+
+.a {
+  color: black;
+}
