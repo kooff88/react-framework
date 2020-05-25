@@ -11,8 +11,7 @@ class One extends React.Component {
   }
 
   render() {
-    let { number } = this.state;
-    console.log("asd", this.props);
+    console.log("this.prop", this.props);
     let { lastage, addAgeCreater } = this.props;
     return (
       <div>
