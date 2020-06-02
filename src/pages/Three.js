@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 
-function Three() {
-  const [number, setNumber] = useState(0);
+import { useSelector, useDispatch } from "react-redux";
+
+function CounterComponent  () {
+  const counter = useSelector(state => state.addName)
+  console.log("asdcounter=>",counter)
+
+  const dispatch = useDispatch();
+  
 
   return (
     <div>
-      Three
-      {number}
-      <button onClick={() => setNumber(number + 1)}>点击</button>
+      <div>{ counter }</div>
+      {/* <button onClick={ () => dispatch({ type:"addName" }) }>click Me</button> */}
     </div>
-  );
+  )
+  
 }
 
-export default Three;
+export default CounterComponent
