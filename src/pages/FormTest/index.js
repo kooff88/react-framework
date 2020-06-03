@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Form,Input } from 'antd';
+import { Form,Input ,Select} from 'antd';
 
 const FormItem = Form.Item;
+const Option = Select.Option;
 
 const FormTest = () => {
 
@@ -15,7 +16,8 @@ const FormTest = () => {
                 layout="inline"
                 form={form}
                 initialValues={{
-                    aaaa:2222
+                    aaaa:2222,
+                    bbbb:"3"
                 }}
             >
                 <FormItem
@@ -23,6 +25,15 @@ const FormTest = () => {
                     label="号码" 
                  >
                     <Input placeholder="请输入参会号码" />
+                </FormItem>
+                <FormItem
+                    name="bbbb"
+                    label="人员" 
+                 >
+                    <Select>
+                        <Option key="3">张三</Option>
+                        <Option key="4">李四</Option>
+                    </Select>
                 </FormItem>
             </Form>
         </div>
