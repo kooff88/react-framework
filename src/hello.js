@@ -4,6 +4,7 @@ import One from "./pages/One";
 import Two from "./pages/Two";
 import Three from "./pages/Three";
 import Dad from "./pages/DadSonnn/Dad";
+import FormTest from "./pages/FormTest";
 
 export default class Hello extends Component {
   render() {
@@ -24,6 +25,9 @@ export default class Hello extends Component {
               <li>
                 <Link to="/dad">DAD</Link>
               </li>
+              <li>
+                <Link to="/form-test">FORM-TEST</Link>
+              </li>
             </ul>
           </nav>
           <Switch>
@@ -35,6 +39,10 @@ export default class Hello extends Component {
             </Route>
             <Route path="/dad">
               <Dad />
+            </Route>
+
+            <Route path="/form-test">
+              <FormTest />
             </Route>
             <Route path="/">
               <One />
